@@ -9,6 +9,6 @@ for ((i=0; i<N; i++)); do
     sum=$((sum + num))
 done
 
-average=$(echo "scale=3; $sum / $N" | bc -l)
+average=$(echo "scale=6; $sum / $N" | bc -l)
 
-printf $average
+printf "%.3f\n" "$average"
